@@ -17,7 +17,9 @@ repository. Tip of bitcoin_hashes:master at time of import: 54c16249e06cc6b7870c
 * [nostd: `alloc` feature no longer enables `core2`](https://github.com/rust-bitcoin/rust-bitcoin/pull/1612)
 * [Rewrite `hash_newtype` macro with new syntax](https://github.com/rust-bitcoin/rust-bitcoin/pull/1659)
 * [Rename `Hash::Inner` to `Hash::Bytes`, 'Hash::*_inner` and several related conversion methods](https://github.com/rust-bitcoin/rust-bitcoin/pull/1577)
+* Removed `FromHex` trait from all hashes.
 
+Note: Parsing from strings is now done using the corresponding `FromStr` implementations.
 
 # 0.11.0 - 2022-06-25
 
